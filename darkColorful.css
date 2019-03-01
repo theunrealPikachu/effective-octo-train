@@ -1,3 +1,8 @@
+/* i really want this to be global */
+
+/* 2014 material design colors from https://material.io/design/color/the-color-system.html#tools-for-picking-colors */
+
+/*
 Blue
 
 50 #E3F2FD
@@ -17,37 +22,40 @@ A700 #2962FF
 */
 
 :root {
-    --color-light-blue: #64B5F6;	  /* Blue 300 */
-    --color-light-green: #64B5F6;	  /* Blue 300 */
-    --color-light-magenta: #64B5F6;	/* Blue 300 */
-    --color-light-purple: #64B5F6;	/* Blue 300 */
+    --color-light-blue: #638fba;	  /* Blue 300 */
+    --color-light-green: #29a19c;	  /* Blue 300 */
+    --color-light-magenta: #927fbf;	/* Blue 300 */
+    --color-light-purple: #27ad20;	/* Blue 300 */
     --color-400: #42A5F5;           /* Blue 400 */
-    --color-blue: #2196F3;		      /* Blue 500 */
-    --color-green: #2196F3;		      /* Blue 500 */
-    --color-yellow: #2196F3;		    /* Blue 500 */
-    --color-magenta:  #1E88E5;		  /* Blue 600 */
-    --color-red: #1565C0;		        /* Blue 800 */
-    --color-dark-green: #1565C0;	  /* Blue 800 */
-    --color-A200: #448AFF;          /* Blue A200 */
-    --color-A400: #2979FF;          /* Blue A400 */
-    --color-purple: #2962FF;		    /* Blue A700 */
+    --color-blue: #69779b;		      /* Blue 500 */
+    --color-green: #6ba57f;		      /* Blue 500 */
+    --color-yellow: #db8146;		    /* Blue 500 */
+    --color-magenta:  #4f3b78;		  /* Blue 600 */
+    --color-red: #4f1177;		        /* Blue 800 */
+    --color-dark-green: #5a082d;	  /* Blue 800 */
+    --color-A200: #bef992;          /* Blue A200 */
+    --color-A400: #9d0b28;          /* Blue A400 */
+    --color-purple: #105410;		    /* Blue A700 */
     
-    --color-dark-blue: #181818;
+    --color-dark-blue: #000000;
     --color-dark-red: #181818;
 
     --movie-overlay: radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 1) 5.46%, rgba(21, 101, 192, 0.46));  /* Blue 800 */
     --background-pipe: url("https://blutopia.xyz/img/pipes/blue.png");
-    --gradient-background: radial-gradient(at 30% top, #072e46 0%, #081c24 70%);
+    --gradient-background: radial-gradient(at 30% top, #000000 0%, #081c24 70%);
 }
 
 body {
     background-color: var(--color-dark-blue);
 }
 
-.btn-primary, .btn-danger, .label-primary {
-    background-color: var(--color-purple);
+
+
+.btn-primary,  .label-primary {
+    background-color: var(--color-light-blue);
     background-image: none;
 }
+
 
 .btn-info, .label-info {
     background-color: var(--color-magenta);
@@ -64,37 +72,38 @@ body {
     background-image: none;
 }
 
-.btn:active, .btn:hover, .btn:focus,
+/*.btn:active, .btn:hover, .btn:focus,
 .btn:active:hover, .btn:active:focus, .btn:active:hover:focus {
     background-color: var(--color-light-purple) !important;
     background-image: none;
-}
+}*/
+
 
 #hoeapp-wrapper, #main-content, .inner-content {
     background-color: var(--color-dark-blue);
 }
 
 .hoe-right-header[hoe-color-type="header-bg5"] {
-    background: #1f1f1f;
+    background: #000000;
 }
 
 #hoeapp-container[hoe-color-type="lpanel-bg5"].hoe-minimized-lpanel #hoe-left-panel {
-    background: #1f1f1f;
+    background: #000000;
 }
 .ratio-bar {
-    background-color: #2b2b2b;
+    background-color: #000000;
 }
 .ratio-bar .badge-user {
-    background-color: #373737;  
+    background-color: #000000;  
 }
 
 .nav-tabs > #active {
     background-color: var(--color-dark-green);
 }
-
+/*
 btn-primary :hover {
     background-color: var(--color-light-purple);
-}
+}*/
 
 /* dark header menus */
 .hoe-right-header .hoe-rheader-submenu > .dropdown-menu > li {
@@ -127,9 +136,10 @@ btn-primary :hover {
     color: #3fb618;
 }
 
-i.torrent-icon, .carousel-control > .glyphicon {
+/*i.torrent-icon, .carousel-control > .glyphicon {
     color: var(--color-blue);
 }
+*/
 
 .col-md-10 {
     background-color:#2b2b2b;
@@ -213,7 +223,7 @@ select, select option {
     border: 1px solid rgba(66, 70, 92, 0.61);
     border-radius: 0px;
 }
-
+/*
 .text-purple,
 .text-orange,
 .text-danger,
@@ -221,7 +231,7 @@ select, select option {
 .text-pink,
 .fa-coins {
     color: var(--color-400);
-}
+}*/
 
 .alert-danger, .panel-danger, .panel-danger > .panel-heading,
 .alert-success, .panel-success, .panel-success > .panel-heading,
@@ -301,3 +311,32 @@ div.header.red div.inner_content,
 .table > tbody > tr > td.text-red {
     color: var(--color-light-red) !important;
 }
+
+.table>td,.table>th {
+    background-color:#c6c8ca;
+}
+
+.table  tbody tr:nth-of-type(odd){
+    background-color:rgba(0,0,0,.05);
+}
+
+.table tbody tr:nth-of-type(odd){
+    background-color:rgba(255,255,255,.05);
+}
+
+a {
+    color: #5387ac;
+}
+
+.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    background-color:  black !important;
+}
+
+.panel-body, .panel-footer{
+    background-color:  black !important;
+}
+
+.badge-user{
+  background-color:  black !important;
+}
+    
