@@ -338,4 +338,7 @@ a {
 .badge-user{
   background-color:  black !important;
 }
-    
+
+.post-content{
+    background-color:  black;
+}
