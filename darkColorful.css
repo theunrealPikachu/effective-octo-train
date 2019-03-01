@@ -340,5 +340,5 @@ a {
 }
 
 .post-content{
-    background-color:  black;
+    background-color:  black !important;
 }
